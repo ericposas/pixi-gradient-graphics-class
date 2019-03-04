@@ -1,8 +1,9 @@
 import './scss/style.scss';
 import $ from 'jquery';
 import * as PIXI from 'pixi.js';
-import {Colors} from './modules/Colors.js';
-import LinearGradientShape from './modules/LinearGradientShape.js';
+// import {Colors} from './modules/Colors.js';
+// import LinearGradientShape from './modules/LinearGradientShape.js';
+import BluePatternSprite from './modules/BluePatternSprite.js';
 
 
 let app = new PIXI.Application(innerWidth, innerHeight, {antialias:true,transparent:false});
@@ -35,8 +36,8 @@ function load_progress(loader, resource){
 
 function start(){
   // start creating our sprites, graphics, etc. once all the images/spritesheets are loaded
-  let white_to_blue = new LinearGradientShape('horizontal', Colors.C1, Colors.C8, {x:0,y:0,w:500,h:300});
-  app.stage.addChild(white_to_blue);
+  let blue_pattern = new BluePatternSprite(app);
+  app.stage.addChild(blue_pattern);
 
   $(window).resize(()=>{
     // check to make sure all items are initialized before calling to resize them
