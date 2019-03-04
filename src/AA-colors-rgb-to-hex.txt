@@ -1,0 +1,33 @@
+
+AA Colors 
+
+RGB to converted to HEX 
+
+Greys
+
+C1 AA white: 255,255,255 | 0xffffff
+
+C2 Tint of AA Gray: 193,199,201 | 0xc1c7c9
+
+C3 Tint of AA Gray: 221,224,226 | 0xdde0e2
+
+C4 AA Black: 19,19,19 | 0x131313
+
+Blues
+
+C5 AA Light Blue: 77,180,250 | 0x4db4fa
+
+C6 Shade of AA Blue: 69,129,188 | 0x4581bc
+
+C7 AA Dark Blue: 0,70,127 | 0x00467f
+
+C8 Shade of AA Dark Blue: 21,51,89 | 0x153359
+
+Reds 
+
+C9 Saturated Tint of AA Red: 237,28,36 | 0xed1c24
+
+C10 Saturated Tint of AA Red: 224,31,38 | 0xe01f26
+
+C11 AA Red: 195,0,25 | 0xc30019
+
