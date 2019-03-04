@@ -5,6 +5,7 @@ import radians from 'degrees-radians';
 // import {Colors} from './modules/Colors.js';
 // import LinearGradientShape from './modules/LinearGradientShape.js';
 import BluePatternSprite from './modules/BluePatternSprite.js';
+import VertPatternSprite from './modules/VertPatternSprite.js';
 
 
 let app = new PIXI.Application(innerWidth, innerHeight, {antialias:true,transparent:false});
@@ -37,9 +38,11 @@ function load_progress(loader, resource){
 
 function start(){
   // start creating our sprites, graphics, etc. once all the images/spritesheets are loaded
-  // let blue_pattern = new BluePatternSprite(app);
-  // app.stage.addChild(blue_pattern);
-  
+  let vert = new VertPatternSprite(app);
+  vert.width*=.75;
+  vert.height*=.75;
+  app.stage.addChild(vert);
+
 
   $(window).resize(()=>{
     // check to make sure all items are initialized before calling to resize them
